@@ -1,0 +1,107 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-top: 50px;
+    background-color: #f4f6f8;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    border: 4px solid purple;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 8px 20px magenta;
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    font-size: 32px;
+}
+
+/* Input */
+input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.6);
+}
+
+/* Button group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    margin: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+/* Button colors */
+#btnText {
+    background-color: #007bff;
+    box-shadow: 0 4px 10px rgba(0,123,255,0.5);
+}
+
+#btnColor {
+    background-color: #28a745;
+    box-shadow: 0 4px 10px rgba(40,167,69,0.5);
+}
+
+#btnSize {
+    background-color: #ffc107;
+    color: black;
+    box-shadow: 0 4px 10px rgba(255,193,7,0.5);
+}
+
+#btnToggle {
+    background-color: #dc3545;
+    box-shadow: 0 4px 10px rgba(220,53,69,0.5);
+}
+
+#btnReset {
+    background-color: #6c757d;
+    box-shadow: 0 4px 10px rgba(108,117,125,0.5);
+}
+
+/* Reset button center */
+#btnReset {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Hover */
+button:hover {
+    transform: scale(1.08);
+    border-color: white;
+}
+
+/* Click */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Paragraph */
+p {
+    font-size: 18px;
+    color: #555;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="1.css">
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Student Marks System</h1>
+
+<div class="name">
+<input type="text" id="name" placeholder="Student Name">
+</div>
+
+<div class="roll">
+<input type="text" id="roll" placeholder="Roll Number">
+</div>
+
+<div class="marks">
+<input type="number" id="math" placeholder="Math">
+<input type="number" id="science" placeholder="Science">
+<input type="number" id="english" placeholder="English">
+<button onclick="addStudent()">Add Student</button>
+</div>
+
+<div class="buttons">
+<button onclick="displayStudents()">Display Students</button>
+<button onclick="showTotal()">Total Marks</button>
+<button onclick="showAverage()">Average Marks</button>
+<button onclick="above80()">Above 80</button>
+<button onclick="showFailed()">Failed</button>
+</div>
+
+<div id="output"></div>
+
+</div>
+
+<script src="1.js"></script>
+
+</body>
+</html>
