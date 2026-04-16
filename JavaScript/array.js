@@ -8,7 +8,7 @@
 // console.log(person.name);
 // console.log(person.age);
 // console.log(person.city);
-
+// console.log(typeof(person));
 
 // let numbers=[1,2,3,4,5,6];
 // console.log(numbers);
@@ -29,5 +29,6 @@
 let newArray=[1,2,3,4,5,6];
 let cubicArray=newArray.map(num=>num*num*num);
 console.log(cubicArray);
+console.log(typeof(cubicArray));
 
 
