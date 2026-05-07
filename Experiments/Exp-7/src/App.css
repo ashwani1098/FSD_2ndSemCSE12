@@ -1,0 +1,20 @@
+/* App.css */
+
+.App {
+  background-color: #d8fd32;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.App h1 {
+  color: #472402;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* Cards side by side */
+.StudentCard {
+  display: inline-flex;
+  margin: 20px;
+}
