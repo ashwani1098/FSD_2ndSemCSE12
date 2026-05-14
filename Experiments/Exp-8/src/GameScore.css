@@ -1,0 +1,59 @@
+/* gameScore.css */
+
+.game-score {
+  width: 380px;
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center;
+  background-color: #f4f7ff;
+  border: 2px solid #4a5cff;
+  border-radius: 15px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.count {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.count strong {
+  color: #4a5cff;
+  font-size: 34px;
+}
+
+/* Common Button Style */
+
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0;
+  transition: 0.3s;
+}
+
+/* Score Button */
+
+.score-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.score-btn:hover {
+  background-color: #1e7e34;
+}
+
+/* Lose Button */
+
+.lose-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.lose-btn:hover {
+  background-color: #b02a37;
+}
