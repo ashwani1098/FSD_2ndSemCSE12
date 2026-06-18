@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Mobile-First Responsive Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <header class="bg-emerald-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-extrabold tracking-tight mb-4 md:mb-0">FitLife</h1>
+            
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm font-medium">
+                    <li><a href="#" class="hover:text-emerald-200 transition-colors">Home</a></li>
+                    <li><a href="#programs" class="hover:text-emerald-200 transition-colors">Programs</a></li>
+                    <li><a href="#trainers" class="hover:text-emerald-200 transition-colors">Trainers</a></li>
+                    <li><a href="#contact" class="hover:text-emerald-200 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-white px-4 py-16 sm:py-24 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-gray-900 tracking-tight">Transform Your Body, Elevate Your Life</h2>
+            <p class="text-lg sm:text-xl text-gray-600 mb-8">
+                Join FitLife today and get access to world-class programs, personal trainers, and a community that pushes you to be your absolute best.
+            </p>
+            <a href="#programs" class="inline-block bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold text-lg shadow hover:bg-emerald-700 transition">
+                Start Your Journey
+            </a>
+        </div>
+    </section>
+
+    <section id="programs" class="container mx-auto px-4 py-12 md:py-20">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-800">Our Services</h3>
+            <p class="text-gray-500 mt-2">Achieve your fitness goals with our tailored programs.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=400&h=250&fit=crop" alt="Weight Training" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h4 class="text-xl font-bold mb-2">Weight Training</h4>
+                    <p class="text-gray-600 mb-4">Build muscle and increase your strength with our heavy compound lifting programs designed by experts.</p>
+                    <a href="#" class="text-emerald-600 font-semibold hover:underline">Learn more &rarr;</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=400&h=250&fit=crop" alt="Cardio & HIIT" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h4 class="text-xl font-bold mb-2">Cardio & HIIT</h4>
+                    <p class="text-gray-600 mb-4">Burn calories fast and improve your cardiovascular health with our intense High-Intensity Interval Training classes.</p>
+                    <a href="#" class="text-emerald-600 font-semibold hover:underline">Learn more &rarr;</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=400&h=250&fit=crop" alt="Yoga & Flexibility" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h4 class="text-xl font-bold mb-2">Yoga & Flexibility</h4>
+                    <p class="text-gray-600 mb-4">Improve your mobility, balance, and mental wellness through guided yoga and deep stretching routines.</p>
+                    <a href="#" class="text-emerald-600 font-semibold hover:underline">Learn more &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-900 text-gray-400 py-8 text-center">
+        <p>&copy; 2026 FitLife. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

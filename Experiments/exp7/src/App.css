@@ -1,0 +1,19 @@
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 5rem;
+
+}
+
+
+.student-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
