@@ -1,0 +1,1070 @@
+<!-- 1. Student Marks & Grade Calculator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Marks and Grade Calculator</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+    margin-top:50px;
+}
+
+.container{
+    width:300px;
+    margin:auto;
+    padding:20px;
+    border:1px solid black;
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:5px;
+}
+
+button{
+    padding:10px 20px;
+    margin-top:10px;
+}
+
+#result{
+    margin-top:20px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Grade Calculator</h2>
+
+    <input type="number" id="m1" placeholder="Subject 1 Marks">
+    <input type="number" id="m2" placeholder="Subject 2 Marks">
+    <input type="number" id="m3" placeholder="Subject 3 Marks">
+    <input type="number" id="m4" placeholder="Subject 4 Marks">
+    <input type="number" id="m5" placeholder="Subject 5 Marks">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="result"></div>
+</div>
+
+<script>
+function calculate(){
+
+    let m1 = Number(document.getElementById("m1").value);
+    let m2 = Number(document.getElementById("m2").value);
+    let m3 = Number(document.getElementById("m3").value);
+    let m4 = Number(document.getElementById("m4").value);
+    let m5 = Number(document.getElementById("m5").value);
+
+    let total = m1 + m2 + m3 + m4 + m5;
+    let average = total / 5;
+
+    let grade;
+
+    if(average >= 90){
+        grade = "A";
+    }
+    else if(average >= 75){
+        grade = "B";
+    }
+    else if(average >= 60){
+        grade = "C";
+    }
+    else if(average >= 40){
+        grade = "D";
+    }
+    else{
+        grade = "Fail";
+    }
+
+    document.getElementById("result").innerHTML =
+    "Total Marks = " + total +
+    "<br>Average = " + average.toFixed(2) +
+    "<br>Grade = " + grade;
+}
+</script>
+
+</body>
+</html>
+
+The image contains 15 separate assignments. Sending all 15 complete projects in one message will exceed the response size limit. I can send them in 3 parts (1–5, 6–10, 11–15) with full boilerplate code for each.
+
+Ok send 
+2. Even or Odd Checker
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Even Odd Checker</title>
+
+<style>
+body{
+    font-family:Arial;
+    text-align:center;
+    margin-top:50px;
+}
+.container{
+    width:300px;
+    margin:auto;
+    border:1px solid black;
+    padding:20px;
+}
+input{
+    padding:10px;
+    width:90%;
+}
+button{
+    padding:10px 20px;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Even Odd Checker</h2>
+
+<input type="number" id="num" placeholder="Enter Number">
+
+<br><br>
+
+<button onclick="check()">Check</button>
+
+<h3 id="result"></h3>
+</div>
+
+<script>
+function check(){
+
+let n=Number(document.getElementById("num").value);
+
+if(n%2==0){
+document.getElementById("result").innerHTML="Even Number";
+}
+else{
+document.getElementById("result").innerHTML="Odd Number";
+}
+
+}
+</script>
+
+</body>
+</html>
+3. Sum of N Numbers
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sum of N Numbers</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:300px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+width:90%;
+}
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Sum of N Numbers</h2>
+
+<input type="number" id="num" placeholder="Enter N">
+
+<br><br>
+
+<button onclick="findSum()">Find Sum</button>
+
+<h3 id="result"></h3>
+</div>
+
+<script>
+function findSum(){
+
+let n=Number(document.getElementById("num").value);
+
+let sum=0;
+
+for(let i=1;i<=n;i++){
+sum=sum+i;
+}
+
+document.getElementById("result").innerHTML=
+"Sum = "+sum;
+
+}
+</script>
+
+</body>
+</html>
+4. Multiplication Table Generator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiplication Table</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:350px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+width:90%;
+}
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Multiplication Table</h2>
+
+<input type="number" id="num" placeholder="Enter Number">
+
+<br><br>
+
+<button onclick="table()">Generate</button>
+
+<p id="result"></p>
+</div>
+
+<script>
+
+function table(){
+
+let n=Number(document.getElementById("num").value);
+
+let output="";
+
+for(let i=1;i<=10;i++){
+output+=n+" x "+i+" = "+(n*i)+"<br>";
+}
+
+document.getElementById("result").innerHTML=output;
+
+}
+
+</script>
+
+</body>
+</html>
+5. Factorial Calculator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factorial Calculator</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:300px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+width:90%;
+}
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Factorial Calculator</h2>
+
+<input type="number" id="num" placeholder="Enter Number">
+
+<br><br>
+
+<button onclick="factorial()">Calculate</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+
+function factorial(){
+
+let n=Number(document.getElementById("num").value);
+
+let fact=1;
+
+for(let i=1;i<=n;i++){
+fact=fact*i;
+}
+
+document.getElementById("result").innerHTML=
+"Factorial = "+fact;
+
+}
+
+</script>
+
+</body>
+</html>
+
+Reply "next" for Projects 6–10 (full code).
+
+6. Largest Number Finder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Largest Number Finder</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:350px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+margin:5px;
+width:90%;
+}
+button{
+padding:10px 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Largest Number Finder</h2>
+
+<input type="number" id="n1" placeholder="Number 1"><br>
+<input type="number" id="n2" placeholder="Number 2"><br>
+<input type="number" id="n3" placeholder="Number 3"><br>
+<input type="number" id="n4" placeholder="Number 4"><br>
+<input type="number" id="n5" placeholder="Number 5"><br>
+
+<button onclick="largest()">Find Largest</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+function largest(){
+
+let a=Number(document.getElementById("n1").value);
+let b=Number(document.getElementById("n2").value);
+let c=Number(document.getElementById("n3").value);
+let d=Number(document.getElementById("n4").value);
+let e=Number(document.getElementById("n5").value);
+
+let max=a;
+
+if(b>max) max=b;
+if(c>max) max=c;
+if(d>max) max=d;
+if(e>max) max=e;
+
+document.getElementById("result").innerHTML=
+"Largest Number = "+max;
+}
+</script>
+
+</body>
+</html>
+7. Simple Interest Calculator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Interest Calculator</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:350px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+margin:5px;
+width:90%;
+}
+button{
+padding:10px 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Simple Interest Calculator</h2>
+
+<input type="number" id="p" placeholder="Principal"><br>
+<input type="number" id="r" placeholder="Rate"><br>
+<input type="number" id="t" placeholder="Time"><br>
+
+<button onclick="calculateSI()">Calculate</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+function calculateSI(){
+
+let p=Number(document.getElementById("p").value);
+let r=Number(document.getElementById("r").value);
+let t=Number(document.getElementById("t").value);
+
+let si=(p*r*t)/100;
+
+document.getElementById("result").innerHTML=
+"Simple Interest = "+si;
+
+}
+</script>
+
+</body>
+</html>
+8. Prime Number Checker
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Number Checker</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:300px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+width:90%;
+}
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Prime Number Checker</h2>
+
+<input type="number" id="num" placeholder="Enter Number">
+
+<br><br>
+
+<button onclick="checkPrime()">Check</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+
+function checkPrime(){
+
+let n=Number(document.getElementById("num").value);
+
+let prime=true;
+
+if(n<2){
+prime=false;
+}
+
+for(let i=2;i<n;i++){
+if(n%i==0){
+prime=false;
+break;
+}
+}
+
+if(prime){
+document.getElementById("result").innerHTML="Prime Number";
+}
+else{
+document.getElementById("result").innerHTML="Not Prime Number";
+}
+
+}
+</script>
+
+</body>
+</html>
+9. Number Pattern Generator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Pattern Generator</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:300px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+width:90%;
+}
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+pre{
+font-size:20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Number Pattern Generator</h2>
+
+<input type="number" id="num" placeholder="Enter Number">
+
+<br><br>
+
+<button onclick="pattern()">Generate</button>
+
+<pre id="result"></pre>
+
+</div>
+
+<script>
+
+function pattern(){
+
+let n=Number(document.getElementById("num").value);
+
+let output="";
+
+for(let i=1;i<=n;i++){
+
+for(let j=1;j<=i;j++){
+output+=j;
+}
+
+output+="\n";
+}
+
+document.getElementById("result").innerText=output;
+
+}
+</script>
+
+</body>
+</html>
+10. Vowel or Consonant Checker
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vowel Consonant Checker</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:300px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+width:90%;
+}
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Vowel or Consonant Checker</h2>
+
+<input type="text" id="letter" maxlength="1" placeholder="Enter Letter">
+
+<br><br>
+
+<button onclick="check()">Check</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+
+function check(){
+
+let ch=document.getElementById("letter").value.toLowerCase();
+
+if(
+ch=="a" ||
+ch=="e" ||
+ch=="i" ||
+ch=="o" ||
+ch=="u"
+){
+document.getElementById("result").innerHTML="Vowel";
+}
+else{
+document.getElementById("result").innerHTML="Consonant";
+}
+
+}
+</script>
+
+</body>
+</html>
+
+Reply "next" for 11–15 full projects.
+
+Ok
+11. Reverse a Number
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reverse Number</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:300px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+width:90%;
+}
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Reverse a Number</h2>
+
+<input type="number" id="num" placeholder="Enter Number">
+
+<br><br>
+
+<button onclick="reverseNum()">Reverse</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+
+function reverseNum(){
+
+let num=document.getElementById("num").value;
+
+let rev=num.split("").reverse().join("");
+
+document.getElementById("result").innerHTML=
+"Reverse Number = "+rev;
+
+}
+
+</script>
+
+</body>
+</html>
+12. Countdown Timer
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:300px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+width:90%;
+}
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Countdown Timer</h2>
+
+<input type="number" id="time" placeholder="Enter Seconds">
+
+<br><br>
+
+<button onclick="startTimer()">Start</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+<script>
+
+function startTimer(){
+
+let sec=Number(document.getElementById("time").value);
+
+let timer=setInterval(function(){
+
+document.getElementById("result").innerHTML=sec;
+
+sec--;
+
+if(sec<0){
+clearInterval(timer);
+document.getElementById("result").innerHTML="Time Up!";
+}
+
+},1000);
+
+}
+
+</script>
+
+</body>
+</html>
+13. Student Result System
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Result System</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:350px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+margin:5px;
+width:90%;
+}
+button{
+padding:10px 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Student Result System</h2>
+
+<input type="number" id="m1" placeholder="Subject 1"><br>
+<input type="number" id="m2" placeholder="Subject 2"><br>
+<input type="number" id="m3" placeholder="Subject 3"><br>
+<input type="number" id="m4" placeholder="Subject 4"><br>
+<input type="number" id="m5" placeholder="Subject 5"><br>
+
+<button onclick="result()">Show Result</button>
+
+<h3 id="output"></h3>
+
+</div>
+
+<script>
+
+function result(){
+
+let m1=Number(document.getElementById("m1").value);
+let m2=Number(document.getElementById("m2").value);
+let m3=Number(document.getElementById("m3").value);
+let m4=Number(document.getElementById("m4").value);
+let m5=Number(document.getElementById("m5").value);
+
+let total=m1+m2+m3+m4+m5;
+let per=total/5;
+
+let grade;
+
+if(per>=90)
+grade="A";
+else if(per>=75)
+grade="B";
+else if(per>=60)
+grade="C";
+else if(per>=40)
+grade="D";
+else
+grade="Fail";
+
+document.getElementById("output").innerHTML=
+"Total = "+total+
+"<br>Percentage = "+per+"%"+
+"<br>Grade = "+grade;
+
+}
+
+</script>
+
+</body>
+</html>
+14. Sum of Even Numbers (1 to N)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sum of Even Numbers</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:300px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+width:90%;
+}
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Sum of Even Numbers</h2>
+
+<input type="number" id="num" placeholder="Enter N">
+
+<br><br>
+
+<button onclick="sumEven()">Calculate</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+
+function sumEven(){
+
+let n=Number(document.getElementById("num").value);
+
+let sum=0;
+
+for(let i=2;i<=n;i=i+2){
+sum=sum+i;
+}
+
+document.getElementById("result").innerHTML=
+"Sum = "+sum;
+
+}
+
+</script>
+
+</body>
+</html>
+15. Temperature Converter (Celsius to Fahrenheit)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Converter</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+}
+.container{
+width:300px;
+margin:auto;
+border:1px solid black;
+padding:20px;
+}
+input{
+padding:10px;
+width:90%;
+}
+button{
+padding:10px 20px;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Temperature Converter</h2>
+
+<input type="number" id="celsius" placeholder="Enter Celsius">
+
+<br><br>
+
+<button onclick="convert()">Convert</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+
+function convert(){
+
+let c=Number(document.getElementById("celsius").value);
+
+let f=(c*9/5)+32;
+
+document.getElementById("result").innerHTML=
+"Fahrenheit = "+f+" °F";
+
+}
+
+</script>
+
+</body>
+</html>
+
+You now have complete code for all 15 projects, each in a single HTML file with HTML, CSS, and JavaScript together. -->
